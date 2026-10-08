@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Garden Services · Sabuj</title>
+<meta name="description" content="Balcony makeovers, monthly mali visits, plant doctor and corporate gifting in Kolkata.">
+<meta name="theme-color" content="#2F6B3F">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ccircle cx='20' cy='20' r='19' fill='%232F6B3F'/%3E%3Cpath d='M20 21C20 14 14 11 9 12C9 18 13 22 20 21Z' fill='%23FFFCF4'/%3E%3Cpath d='M20 18C20 11 26 8 31 9C31 15 27 19 20 18Z' fill='%23E8B546'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..800,0..100,0..1;1,9..144,300..800,0..100,0..1&family=DM+Sans:opsz,wght@9..40,400..700&family=Hind+Siliguri:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="services">
+<div id="site-header"></div>
+<main>
+  <section class="page-hero">
+    <div class="wrap svc-hero">
+      <div class="reveal">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><i data-lucide="chevron-right"></i><span>Garden services</span></nav>
+        <span class="eyebrow"><i data-lucide="shovel"></i>Trained malis · since 2014</span>
+        <h1 style="margin-top:12px">Your balcony, <em>but greener.</em></h1>
+        <p>From a single sad money plant to a full terrace kitchen garden — our team designs, plants and looks after green spaces across Kolkata.</p>
+        <div class="hero-cta" style="margin:26px 0 0"><a class="btn btn-primary" href="#book">Book a visit <i data-lucide="arrow-right"></i></a><a class="btn btn-ghost" id="waBtn" target="_blank" rel="noopener"><i data-lucide="message-circle"></i>Ask the plant doctor</a></div>
+      </div>
+      <div class="reveal" id="svcArt" style="display:grid;grid-template-columns:repeat(3,1fr);align-items:end;background:var(--sage);border-radius:28px;padding:30px 20px 10px"></div>
+    </div>
+  </section>
+  <section class="section" style="padding-top:20px">
+    <div class="wrap">
+      <div class="sec-head reveal"><div><span class="eyebrow"><i data-lucide="sparkles"></i>What we do</span><h2>Services</h2></div></div>
+      <div class="svc-grid stagger" id="svcAll"></div>
+    </div>
+  </section>
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head reveal"><div><span class="eyebrow"><i data-lucide="route"></i>How it works</span><h2>Four steps to a garden</h2></div></div>
+      <div class="process stagger">
+        <div><h4>Tell us about the space</h4><p>Share a few photos on WhatsApp or book a free site visit.</p></div>
+        <div><h4>Get a mood board</h4><p>Plants, pots and layout picked for your light and budget.</p></div>
+        <div><h4>Install day</h4><p>Our team brings everything and sets it up in a few hours.</p></div>
+        <div><h4>Aftercare</h4><p>Monthly visits or WhatsApp support — your call.</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="book" style="padding-top:0">
+    <div class="wrap book">
+      <div class="reveal">
+        <span class="eyebrow"><i data-lucide="calendar-check"></i>Book a visit</span>
+        <h2 style="font-size:clamp(32px,4.4vw,52px);margin:10px 0 12px">We'll call you back <em>within 2 hours.</em></h2>
+        <p class="muted">Site visits are free inside Kolkata Municipal Corporation limits.</p>
+        <div class="contact-list" id="contactList"></div>
+      </div>
+      <form class="panel-card reveal" id="bookForm" novalidate>
+        <div class="form-grid">
+          <div class="field full"><label for="b-svc">Service</label><select class="input select" id="b-svc" name="service"></select></div>
+          <div class="field"><label for="b-name">Name</label><input class="input" id="b-name" name="name" required autocomplete="name"><span class="err"></span></div>
+          <div class="field"><label for="b-phone">Mobile</label><input class="input" id="b-phone" name="phone" required inputmode="tel" pattern="[6-9][0-9]{9}" placeholder="10-digit number"><span class="err"></span></div>
+          <div class="field"><label for="b-area">Area</label><input class="input" id="b-area" name="area" list="areaList" placeholder="e.g. Salt Lake"><datalist id="areaList"></datalist></div>
+          <div class="field"><label for="b-date">Preferred date</label><input class="input" id="b-date" name="date" type="date"></div>
+          <div class="field full"><label for="b-msg">Tell us about your space</label><textarea class="input" id="b-msg" name="message" placeholder="South-facing 4×10 ft balcony, gets afternoon sun…"></textarea></div>
+          <button class="btn btn-primary btn-block full" style="height:52px">Request a callback</button>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+<div id="site-footer"></div>
+
+<script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+<script src="assets/js/config.js"></script>
+<script src="assets/js/image-credits.js"></script>
+<script src="assets/js/mock-data.js"></script>
+<script src="assets/js/art.js"></script>
+<script src="assets/js/api.js"></script>
+<script src="assets/js/ui.js"></script>
+<script src="assets/js/pages/services.js"></script>
+</body>
+</html>

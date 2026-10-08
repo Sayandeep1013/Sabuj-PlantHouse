@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shop Plants · Sabuj</title>
+<meta name="description" content="Indoor, flowering, puja and balcony plants delivered across Kolkata.">
+<meta name="theme-color" content="#2F6B3F">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ccircle cx='20' cy='20' r='19' fill='%232F6B3F'/%3E%3Cpath d='M20 21C20 14 14 11 9 12C9 18 13 22 20 21Z' fill='%23FFFCF4'/%3E%3Cpath d='M20 18C20 11 26 8 31 9C31 15 27 19 20 18Z' fill='%23E8B546'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..800,0..100,0..1;1,9..144,300..800,0..100,0..1&family=DM+Sans:opsz,wght@9..40,400..700&family=Hind+Siliguri:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="shop">
+<div id="site-header"></div>
+<main>
+  <section class="page-hero">
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><i data-lucide="chevron-right"></i><span id="crumbNow">Shop</span></nav>
+      <h1 id="shopTitle">All plants</h1>
+      <p id="shopSub">Nursery-fresh, ready-potted and delivered by our own riders.</p>
+    </div>
+  </section>
+  <section class="wrap">
+    <div class="cat-scroller" id="catScroller"></div>
+    <div class="shop">
+      <aside class="filters" id="filters" aria-label="Filters">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <h3 style="font-size:24px">Filters</h3>
+          <div style="display:flex;gap:4px"><button class="btn btn-ghost btn-sm" id="clearF">Clear</button><button class="icon-btn close-f" id="closeF" aria-label="Close filters"><i data-lucide="x"></i></button></div>
+        </div>
+        <div><h4>Light</h4>
+          <label class="check"><input type="checkbox" name="light" value="low">Low light <span class="n" data-n="light:low"></span></label>
+          <label class="check"><input type="checkbox" name="light" value="medium">Bright, indirect <span class="n" data-n="light:medium"></span></label>
+          <label class="check"><input type="checkbox" name="light" value="bright">Full sun <span class="n" data-n="light:bright"></span></label>
+        </div>
+        <div><h4>Care level</h4>
+          <label class="check"><input type="checkbox" name="care" value="easy">Beginner friendly <span class="n" data-n="care:easy"></span></label>
+          <label class="check"><input type="checkbox" name="care" value="moderate">Needs a routine <span class="n" data-n="care:moderate"></span></label>
+        </div>
+        <div><h4>Home</h4>
+          <label class="check"><input type="checkbox" name="pet" value="1"><i data-lucide="paw-print"></i>Pet friendly only</label>
+        </div>
+        <div><h4>Max price · <span id="priceOut"></span></h4>
+          <input class="range" type="range" name="maxPrice" min="150" max="1500" step="50" aria-label="Maximum price">
+        </div>
+        <div><h4>Space</h4><div class="chips" id="spaceChips"></div></div>
+        <div><h4>Season</h4><div class="chips" id="seasonChips"></div></div>
+        <button class="btn btn-primary btn-block close-f" id="applyF">Show plants</button>
+      </aside>
+      <div>
+        <div class="shop-bar">
+          <span class="count" id="count">Loading…</span>
+          <div class="right">
+            <button class="btn btn-ghost btn-sm filter-toggle" id="openF"><i data-lucide="sliders-horizontal"></i>Filters</button>
+            <select class="select" id="sort" aria-label="Sort">
+              <option value="popular">Most popular</option><option value="rating">Top rated</option><option value="price-asc">Price: low to high</option><option value="price-desc">Price: high to low</option><option value="discount">Biggest discount</option>
+            </select>
+          </div>
+        </div>
+        <div class="active-filters" id="activeF"></div>
+        <div class="grid-products" id="grid"></div>
+      </div>
+    </div>
+  </section>
+</main>
+<div id="site-footer"></div>
+
+<script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+<script src="assets/js/config.js"></script>
+<script src="assets/js/image-credits.js"></script>
+<script src="assets/js/mock-data.js"></script>
+<script src="assets/js/art.js"></script>
+<script src="assets/js/api.js"></script>
+<script src="assets/js/ui.js"></script>
+<script src="assets/js/pages/shop.js"></script>
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sabuj Plant House · Kolkata</title>
+<meta name="description" content="Nursery-fresh plants, pots and garden services delivered same-day across Kolkata.">
+<meta name="theme-color" content="#2F6B3F">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ccircle cx='20' cy='20' r='19' fill='%232F6B3F'/%3E%3Cpath d='M20 21C20 14 14 11 9 12C9 18 13 22 20 21Z' fill='%23FFFCF4'/%3E%3Cpath d='M20 18C20 11 26 8 31 9C31 15 27 19 20 18Z' fill='%23E8B546'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..800,0..100,0..1;1,9..144,300..800,0..100,0..1&family=DM+Sans:opsz,wght@9..40,400..700&family=Hind+Siliguri:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="home">
+<div id="site-header"></div>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="leaf-fall" id="leafFall" aria-hidden="true"></div>
+    <div class="wrap hero-grid">
+      <div class="reveal">
+        <span class="eyebrow"><i data-lucide="sprout"></i>Kolkata's neighbourhood plant house</span>
+        <h1>Bring the <span class="squig"><em>monsoon</em><svg viewBox="0 0 300 20" preserveAspectRatio="none" aria-hidden="true"><path d="M2 14C40 4 70 18 110 10S180 2 220 12 280 8 298 6" stroke="var(--clay)" stroke-width="5" fill="none" stroke-linecap="round"/></svg></span> indoors.</h1>
+        <p class="lede">Nursery-fresh plants from growers in Garia and Sonarpur — potted, not bagged — and delivered by our own riders, often the same afternoon.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="shop.html">Shop plants <i data-lucide="arrow-right"></i></a>
+          <a class="btn btn-ghost" href="#finder"><i data-lucide="wand-sparkles"></i>Find my plant</a>
+        </div>
+        <div class="hero-proof">
+          <div class="avatars" aria-hidden="true"><span style="background:#2F6B3F">R</span><span style="background:#C2653F">A</span><span style="background:#D6A13F">F</span><span style="background:#3F5F86">D</span></div>
+          <div><b>40,000+ plant parents</b><small>across 230+ Kolkata pincodes</small></div>
+          <div><b style="display:flex;align-items:center;gap:4px">4.8 <i data-lucide="star" style="fill:var(--sun);color:var(--sun);width:16px"></i></b><small>Google rating</small></div>
+        </div>
+      </div>
+      <div class="hero-stage reveal" id="heroStage">
+        <div class="blob"></div>
+        <div class="float-card a"><span class="ic"><i data-lucide="truck"></i></span><span><b>Same-day</b>South & Central Kolkata</span></div>
+        <div class="float-card b"><span class="ic" style="background:var(--clay-soft);color:var(--clay)"><i data-lucide="shield-check"></i></span><span><b>30-day promise</b>Free replacement</span></div>
+        <div class="float-card c"><span class="ic" style="background:#F6E7C1;color:#8A6410"><i data-lucide="hand"></i></span><span><b>Drag to spin</b>our 3D monstera</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST -->
+  <section class="section-sm" style="padding-top:8px">
+    <div class="wrap">
+      <div class="trust stagger">
+        <div><span class="ic"><i data-lucide="sprout"></i></span><span><b>Grown, not stocked</b><small>Direct from 18 Bengal growers</small></span></div>
+        <div><span class="ic"><i data-lucide="flower-2"></i></span><span><b>Ready-potted</b><small>In terracotta & our soil mix</small></span></div>
+        <div><span class="ic"><i data-lucide="bike"></i></span><span><b>Own delivery riders</b><small>No courier-box trauma</small></span></div>
+        <div><span class="ic"><i data-lucide="message-circle-heart"></i></span><span><b>Lifetime care help</b><small>Plant doctor on WhatsApp</small></span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <section class="section">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div><span class="eyebrow"><i data-lucide="leaf"></i>Browse the nursery</span><h2>Something green for <em>every</em> corner.</h2></div>
+        <a class="link-arrow" href="shop.html">All 300+ plants <i data-lucide="arrow-right"></i></a>
+      </div>
+      <div class="cat-grid stagger" id="catGrid"></div>
+    </div>
+  </section>
+
+  <!-- BESTSELLERS -->
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div><span class="eyebrow"><i data-lucide="flame"></i>Kolkata's favourites</span><h2>Bestsellers this week</h2></div>
+        <div class="season-tabs" id="bestTabs" role="tablist" style="margin:0">
+          <button class="chip on" data-best="all">All</button><button class="chip" data-best="indoor">Indoor</button><button class="chip" data-best="flowering">Flowering</button><button class="chip" data-best="succulents">Succulents</button>
+        </div>
+      </div>
+      <div class="grid-products four" id="bestGrid"></div>
+    </div>
+  </section>
+
+  <!-- SEASONS -->
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <div class="season-band reveal">
+        <svg class="mandala" viewBox="0 0 200 200" aria-hidden="true"><g fill="none" stroke="#E8B546" stroke-width="1.2"><circle cx="100" cy="100" r="96"/><circle cx="100" cy="100" r="70"/><circle cx="100" cy="100" r="30"/></g><g fill="#E8B546" id="petals"></g></svg>
+        <div class="sec-head">
+          <div><span class="eyebrow"><i data-lucide="calendar-heart"></i>Bengal's six seasons, simplified</span><h2>What to plant <em id="seasonName">now</em></h2></div>
+          <p id="seasonNote"></p>
+        </div>
+        <div class="season-tabs" id="seasonTabs" role="tablist"></div>
+        <div class="hscroll" id="seasonGrid"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPACES -->
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div><span class="eyebrow"><i data-lucide="home"></i>Shop by space</span><h2>Tell us the room, we'll pick the plant.</h2></div>
+      </div>
+      <div class="spaces stagger" id="spaces"></div>
+    </div>
+  </section>
+
+  <!-- QUIZ -->
+  <section class="section" id="finder" style="padding-top:0">
+    <div class="wrap">
+      <div class="quiz reveal">
+        <div>
+          <span class="eyebrow"><i data-lucide="wand-sparkles"></i>Plant finder · 30 seconds</span>
+          <h2>Not sure what will <em>survive</em> your flat?</h2>
+          <p class="muted">Three quick questions. We'll match you with plants our growers would put in your home.</p>
+          <div style="margin-top:20px;max-width:240px" aria-hidden="true" id="quizArt"></div>
+        </div>
+        <div>
+          <div class="quiz-prog" id="quizProg"><i class="on"></i><i></i><i></i><i></i></div>
+          <div id="quizSteps"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES + COMPARE -->
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div><span class="eyebrow"><i data-lucide="shovel"></i>Beyond the pot</span><h2>Our malis come to <em>you</em>.</h2></div>
+        <a class="link-arrow" href="services.html">All garden services <i data-lucide="arrow-right"></i></a>
+      </div>
+      <div class="svc-grid stagger" id="svcGrid"></div>
+      <div class="table-scroll reveal" style="margin-top:40px">
+        <table class="compare">
+          <thead><tr><th>Why Sabuj</th><th class="us">Sabuj</th><th>Roadside nursery</th><th>Big e-com</th></tr></thead>
+          <tbody>
+            <tr><td>Delivered in a real pot</td><td class="us y"><i data-lucide="check"></i></td><td class="n"><i data-lucide="x"></i></td><td class="n"><i data-lucide="x"></i></td></tr>
+            <tr><td>Same-day in Kolkata</td><td class="us y"><i data-lucide="check"></i></td><td>Carry it yourself</td><td>3–7 days</td></tr>
+            <tr><td>Grown for Bengal humidity</td><td class="us y"><i data-lucide="check"></i></td><td class="y"><i data-lucide="check"></i></td><td class="n"><i data-lucide="x"></i></td></tr>
+            <tr><td>30-day replacement</td><td class="us y"><i data-lucide="check"></i></td><td class="n"><i data-lucide="x"></i></td><td>7 days</td></tr>
+            <tr><td>Aftercare on WhatsApp</td><td class="us y"><i data-lucide="check"></i></td><td>Sometimes</td><td class="n"><i data-lucide="x"></i></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div><span class="eyebrow"><i data-lucide="heart-handshake"></i>From Salt Lake to Behala</span><h2>Plant parents say</h2></div>
+      </div>
+      <div class="testis" id="testis"></div>
+    </div>
+  </section>
+
+  <!-- DELIVERY -->
+  <section class="section" style="padding-top:0">
+    <div class="wrap deliver">
+      <div class="map-card reveal" id="mapCard"></div>
+      <div class="reveal">
+        <span class="eyebrow"><i data-lucide="map-pinned"></i>Delivery across the city</span>
+        <h2 style="font-size:clamp(32px,4.4vw,52px);margin:10px 0 14px">From Shyambazar to Sonarpur, <em>by our own riders.</em></h2>
+        <p class="muted">Orders before 1pm reach most of South & Central Kolkata the same day. Everywhere else in Greater Kolkata — next morning. Seeds, pots and hardy plants ship across India.</p>
+        <div class="areas" id="areas"></div>
+        <form class="pin-form" data-pin-form><input class="input" inputmode="numeric" maxlength="6" placeholder="Enter your pincode" aria-label="Pincode"><button class="btn btn-primary">Check</button></form>
+        <div class="pin-result"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GUIDES -->
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div><span class="eyebrow"><i data-lucide="book-open"></i>From the potting shed</span><h2>Care guides for <em>Bengal</em> weather</h2></div>
+        <a class="link-arrow" href="guides.html">All guides <i data-lucide="arrow-right"></i></a>
+      </div>
+      <div class="guide-grid stagger" id="homeGuides"></div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head reveal"><div><span class="eyebrow"><i data-lucide="circle-help"></i>Good to know</span><h2>Questions, answered</h2></div></div>
+      <div class="faq reveal" id="faqList"></div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="section" style="padding-top:0;padding-bottom:0">
+    <div class="wrap">
+      <div class="news reveal">
+        <div><h2>Monthly care notes, <em>no spam.</em></h2><p>Seasonal planting calendars for Bengal, early access to Pujo & winter flower drops, and 15% off your first order.</p></div>
+        <form id="newsForm"><input type="email" required placeholder="you@email.com" aria-label="Email"><button class="btn">Subscribe</button></form>
+        <div class="deco" id="newsDeco" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+
+<script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="assets/js/config.js"></script>
+<script src="assets/js/image-credits.js"></script>
+<script src="assets/js/mock-data.js"></script>
+<script src="assets/js/guides-data.js"></script>
+<script src="assets/js/art.js"></script>
+<script src="assets/js/api.js"></script>
+<script src="assets/js/ui.js"></script>
+<script src="assets/js/hero3d.js"></script>
+<script src="assets/js/pages/home.js"></script>
+</body>
+</html>
